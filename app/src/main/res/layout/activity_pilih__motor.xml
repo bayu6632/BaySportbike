@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primer1"
+    tools:context=".Pilih_Motor">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="94dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/baysport1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/nunitobold"
+        android:text="DASHBOARD"
+        android:textColor="@color/orangeprimer"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/nunitobold"
+        android:text="Klik untuk info motor"
+        android:textColor="#ffffff"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="30dp">
+
+            <LinearLayout
+                android:id="@+id/r25"
+                android:layout_width="143dp"
+                android:layout_height="118dp"
+                android:background="@drawable/backlinear"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="136dp"
+                    android:layout_height="77dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/r251" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/nunitobold"
+                    android:paddingTop="10dp"
+                    android:text="YAMAHA R25"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/r15"
+                android:layout_width="143dp"
+                android:layout_height="118dp"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/backlinear"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="136dp"
+                    android:layout_height="77dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/r151" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/nunitobold"
+                    android:paddingTop="10dp"
+                    android:text="YAMAHA R15"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="30dp">
+
+            <LinearLayout
+                android:id="@+id/n250fi"
+                android:layout_width="143dp"
+                android:layout_height="118dp"
+                android:background="@drawable/backlinear"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="136dp"
+                    android:layout_height="77dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ninja2501" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/nunitobold"
+                    android:paddingTop="10dp"
+                    android:text="NINJA 250 FI"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/n650se"
+                android:layout_width="143dp"
+                android:layout_height="118dp"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/backlinear"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="136dp"
+                    android:layout_height="77dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ninja650" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/nunitobold"
+                    android:paddingTop="10dp"
+                    android:text="NINJA 650 SE"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="30dp">
+
+            <LinearLayout
+                android:id="@+id/cbr250"
+                android:layout_width="143dp"
+                android:layout_height="118dp"
+                android:background="@drawable/backlinear"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="136dp"
+                    android:layout_height="77dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/cbr2501" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/nunitobold"
+                    android:paddingTop="10dp"
+                    android:text="CBR 250 RR"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cbr150"
+                android:layout_width="143dp"
+                android:layout_height="118dp"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/backlinear"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="136dp"
+                    android:layout_height="77dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/cbr1501" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/nunitobold"
+                    android:paddingTop="10dp"
+                    android:text="CBR 150 R"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

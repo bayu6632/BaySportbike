@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">BaySportBike</string>
+    <string name="uls_r25">Pada bagian mesin Yamaha R25 juga sudah
+dilengkapi dengan Mesin berteknologi canggih
+yaitu Mesin 4 langkah 8 valve 2 silinder DOHC
+berpendingin  yang memiliki kapasitas mesin 250 cc
+yang memiliki performa yang sangat kencang.</string>
+
+
+    <string name="uls_r15">Dibalik beberapa kekurangannya, All New R15 juga
+ punya berbagai fitur untuk meningkatkan performa
+ mesin. Salah satunya penggunaan teknologi Variable
+ Valves Actuation (VVA) dalam unit 1-silinder 155cc
+Teknologi ini turut menjaga performa mesin tetap
+ stabil dan bekerja maksimal. Lantaran tenaga dan
+ torsinya terkontrol di setiap putaran mesin.
+Di kelas motor sport, utamanya 150 cc, hanya R15
+model yang menggunakan teknologi katup variable
+ seperti ini. </string>
+
+    <string name="uls_n250">Bermodalkan mesin 2 silinder berkapasitas 250cc, performa
+Kawasaki Ninja 250 FI memang cepat. Namun satu tingkat
+dibawah Honda CBR250RR dan Yamaha R25. Walaupun begitu,
+motor sport 250cc ini tetap bisa menjadi pilihan utama. Pasalnya
+desain motor Ninja 250 tetap keren dan terlihat begitu sporty.
+Balutan bodi full fairingnya memang menarik, dan dipadukan
+ dengan bentuk bodi bongsor yang tak kalah keren dari moge
+ yang dibanderol lebih mahal dari harga Ninja 250. </string>
+
+    <string name="uls_n650">pada sektor mesin pacunya, motor sport Kawaski ini akan dibekali
+mesin berkapasitas 649cc dengan mengadopsi tipe mesin DOHC
+yang membuatnya mampu menyemburkan tenaga yang super
+besar sehingga tak heran jika motor sport ini mampu melaju
+dengan kecepatan yang begitu tinggi. </string>
+
+    <string name="uls_cb250rr">Honda CBR250RR ini juga akan mengusung desain full fairing
+ yang aerodinamis dan futuristis sehingga bisa dipastikan akan
+ menarik para pecinta otomotif.Menginjak pada spesifikasinya,
+Honda CBR250RR ini akan menggendong mesin DOHC 8 katup
+2 silinder type Parallel Twin Cylinder 6 percepatan.</string>
+
+    <string name="uls_cb150r">Mesin baru dengan rancangan bore x stroke square
+ (57,3 x 57,8 mm), karakternya lebih enak dipakai harian
+dibanding CBR150R lama yang overbore (63,5 x 47,2 mm).
+
+    </string>
+</resources>

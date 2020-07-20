@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">BaySportBike</string>
+    <string name="next">LANJUT</string>
+    <string name="skip">LEWATI</string>
+    <string name="start">MULAI</string>
     <string name="uls_r25">Pada bagian mesin Yamaha R25 juga sudah
 dilengkapi dengan Mesin berteknologi canggih
 yaitu Mesin 4 langkah 8 valve 2 silinder DOHC
@@ -42,6 +45,22 @@ Honda CBR250RR ini akan menggendong mesin DOHC 8 katup
     <string name="uls_cb150r">Mesin baru dengan rancangan bore x stroke square
  (57,3 x 57,8 mm), karakternya lebih enak dipakai harian
 dibanding CBR150R lama yang overbore (63,5 x 47,2 mm).
+
+    </string>
+
+    <string name="desrc390">RC390 diklaim sebagai kombinasi paling baik pada kendaraan
+    harian serta sepeda motor berperforma balap. Mesin 373,2 cc, 4-stroke berpendingin cairan,
+        dengan daya meraih 43tk, berpadu dengan transmisi manual enam percepatan.
+        System penegeramn sdah memakai ABS, single-disc  ukuran 300mm didepan serta 230mm dibelakang,
+        dan kaliper rem Brembo.
+
+
+    </string>
+
+    <string name="desrc250">Motor RC 250 ini mampu mengeluarkan tenaga sebesar 31hp pada 9.000rpm dan torsi puncak mencapai
+        24 Nm pada 7.250rpm. Pada bagian sasis menggunakan sasis yang diadopsi dari kTM di kejuaraan balap Moto3. Sasis tipe
+        trellis baja ini membuat stabilitas tinggi dan kendali yang presisi.
+        Bagian suspensi depan sudah memakai suspensi upside down dengan diameter 43mm.
 
     </string>
 </resources>

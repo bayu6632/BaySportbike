@@ -9,7 +9,7 @@ import android.widget.LinearLayout;
 
 public class Pilih_Motor extends AppCompatActivity {
 
-    LinearLayout r15,r25,n250fi,n650se, cbr250, cbr150;
+    LinearLayout r15,r25,n250fi,n650se, cbr250, cbr150, ktm1, ktm2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,7 +21,8 @@ public class Pilih_Motor extends AppCompatActivity {
         n650se = findViewById(R.id.n650se);
         cbr250 = findViewById(R.id.cbr250);
         cbr150 = findViewById(R.id.cbr150);
-
+        ktm1 = findViewById(R.id.ktm1);
+        ktm2 = findViewById(R.id.ktm2);
 
         //untuk pindah aktiviti
         r15.setOnClickListener(new View.OnClickListener() {
@@ -66,5 +67,20 @@ public class Pilih_Motor extends AppCompatActivity {
                 startActivity(a);
             }
         });
+        ktm1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent a = new Intent(Pilih_Motor.this, motor_rc250.class);
+                startActivity(a);
+            }
+        });
+        ktm2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent a = new Intent(Pilih_Motor.this, motor_rc390.class);
+                startActivity(a);
+            }
+        });
+
     }
 }

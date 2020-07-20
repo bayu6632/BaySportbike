@@ -69,17 +69,53 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
         app:layout_constraintVertical_bias="1.0">
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:fontFamily="@font/nunitobold"
-            android:text="Ulasan Honda CBR 250 RR"
-            android:textColor="#000000"
-            android:textSize="22sp"
-            android:paddingLeft="30dp"
-            android:paddingTop="10dp"/>
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="54dp"
+                android:layout_height="64dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/cc"
+
+                />
+
+            <ImageView
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:src="@drawable/speed"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="10dp"
+
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="249,7cc"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:layout_marginLeft="45dp"
+                android:fontFamily="@font/nunitoreg"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12500rpm"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:layout_marginLeft="135dp"
+                android:fontFamily="@font/nunitoreg"/>
+        </LinearLayout>
 
         <TextView
             android:id="@+id/textView4"
@@ -89,7 +125,7 @@
             android:fontFamily="@font/nunitoreg"
             android:text="@string/uls_cb250rr"
             android:textColor="#ffffff"
-            android:textSize="15sp"
+            android:textSize="13sp"
             android:paddingLeft="30dp"/>
         <TextView
             android:id="@+id/textView5"
@@ -97,10 +133,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:fontFamily="@font/nunitoreg"
-            android:text="Rp 64 - 77 Jt"
+            android:text="Rp 66 - 72 Jt"
             android:textColor="#000000"
             android:textSize="30sp"
             android:paddingLeft="30dp"
-            android:paddingTop="40dp"/>
+            />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

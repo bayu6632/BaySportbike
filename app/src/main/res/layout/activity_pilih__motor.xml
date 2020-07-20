@@ -50,7 +50,7 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="25dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -225,6 +225,65 @@
                     android:fontFamily="@font/nunitobold"
                     android:paddingTop="10dp"
                     android:text="CBR 150 R"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="30dp">
+
+            <LinearLayout
+                android:id="@+id/ktm1"
+                android:layout_width="143dp"
+                android:layout_height="118dp"
+                android:background="@drawable/backlinear"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="67dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/rc250" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/nunitobold"
+                    android:paddingTop="10dp"
+                    android:text="KTM RC 250"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ktm2"
+                android:layout_width="143dp"
+                android:layout_height="118dp"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/backlinear"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="136dp"
+                    android:layout_height="77dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/rc390" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/nunitobold"
+                    android:paddingTop="10dp"
+                    android:text="KTM RC 390"
                     android:textColor="#ffffff"
                     android:textSize="15sp" />
 

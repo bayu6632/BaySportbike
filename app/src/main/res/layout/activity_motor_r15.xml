@@ -69,19 +69,55 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
         app:layout_constraintVertical_bias="1.0">
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:fontFamily="@font/nunitobold"
-            android:text="Ulasan Yamaha R15"
-            android:textColor="#000000"
-            android:textSize="22sp"
-            android:paddingLeft="30dp"
-            android:paddingTop="10dp"/>
+            android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="54dp"
+                    android:layout_height="54dp"
+                    android:src="@drawable/cc"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="10dp"
+
+                    />
+
+            <ImageView
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:src="@drawable/speed"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="10dp"
+
+                />
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="155cc"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:layout_marginLeft="45dp"
+            android:fontFamily="@font/nunitoreg"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10000rpm"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:layout_marginLeft="145dp"
+            android:fontFamily="@font/nunitoreg"/>
+    </LinearLayout>
+    <TextView
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -97,10 +133,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:fontFamily="@font/nunitoreg"
-            android:text="Rp 35 - 40 Jt"
+            android:text="Rp 36 Jt"
             android:textColor="#000000"
             android:textSize="30sp"
             android:paddingLeft="30dp"
-            android:paddingTop="55dp"/>
+           />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

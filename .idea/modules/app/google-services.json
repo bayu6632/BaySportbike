@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "604251710202",
+    "firebase_url": "https://baysportbikeasli.firebaseio.com",
+    "project_id": "baysportbikeasli",
+    "storage_bucket": "baysportbikeasli.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:604251710202:android:4b97e16f9822585faddf43",
+        "android_client_info": {
+          "package_name": "com.bayudev.baysportbike"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "604251710202-ipvpopb90saaurva3k78763kt52ub62a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bayudev.baysportbike",
+            "certificate_hash": "6b345252b0a37892988fb5b231828385fe85c243"
+          }
+        },
+        {
+          "client_id": "604251710202-ud5o9utdf8dsqhg95466grgkave2nfrb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMbFfwXFL-1GYIzYzQoa_7A0FSNJCQnpM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "604251710202-ud5o9utdf8dsqhg95466grgkave2nfrb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

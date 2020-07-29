@@ -1,5 +1,6 @@
 package com.bayudev.baysportbike;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -27,94 +28,83 @@ public class Login extends AppCompatActivity {
 
 
 
-    //memanggil key string
-    String USERKEY = "userkey";
-    String user_key = "";
+    String USERNAME_KEY = "usernamekey";
+    String username_key ="";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-
-        //inisiasi variabel
+        tmbl_daftar = findViewById(R.id.tmbl_daftar);
+        tmbl_login = findViewById(R.id.tmbl_login);
         logusername = findViewById(R.id.logusername);
         logpassword = findViewById(R.id.logpassword);
-        tmbl_login = findViewById(R.id.tmbl_login);
-        tmbl_daftar = findViewById(R.id.tmbl_daftar);
 
+    tmbl_daftar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent godaftar = new Intent(Login.this, Daftar.class);
+                startActivity(godaftar);
+            }
+        });
         tmbl_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                //inisialisasi string username dan password
-                final String username = logpassword.getText().toString();
+                // ubah state menjadi loading
+                tmbl_login.setEnabled(false);
+                tmbl_login.setText("TUNGGU...");
+
+                final String username = logusername.getText().toString();
                 final String password = logpassword.getText().toString();
 
+                reference = FirebaseDatabase.getInstance().getReference().child("User").child(username);
 
-                //jika username kosong maka ada notice
-                if(username.isEmpty()) {
-                    Toast.makeText(getApplicationContext(), "Username kosong!", Toast.LENGTH_SHORT).show();
-                }
-                else {
-                    //jika password kosong maka ada notice
-                    if(password.isEmpty()) {
-                        Toast.makeText(getApplicationContext(), "Password kosong!", Toast.LENGTH_SHORT).show();
+                reference.addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                        if (dataSnapshot.exists()) {
 
-                    }
-                    else {
-                        reference = FirebaseDatabase.getInstance().getReference()
-                                .child("User").child(username);
-
-                        reference.addListenerForSingleValueEvent(new ValueEventListener() {
-                            @Override
-                            public void onDataChange(DataSnapshot dataSnapshot) {
-                                if(dataSnapshot.exists()){
-
-                                    // ambil data password dari firebase
-                                    String passwordFromFirebase = dataSnapshot.child("password").getValue().toString();
-
-                                    // validasi password dengan password firebase
-                                    if(password.equals(passwordFromFirebase)){
-
-                                        // simpan username (key) kepada local
-                                        SharedPreferences sharedPreferences = getSharedPreferences(USERKEY, MODE_PRIVATE);
-                                        SharedPreferences.Editor editor = sharedPreferences.edit();
-                                        editor.putString(user_key, logusername.getText().toString());
-                                        editor.apply();
-
-                                        // berpindah activity
-                                        Intent gotohome = new Intent(Login.this,Pilih_Motor.class);
-                                        startActivity(gotohome);
-
-                                    }
-                                    else {
-                                        Toast.makeText(getApplicationContext(), "Password salah!", Toast.LENGTH_SHORT).show();
-
-                                    }
+                            //ambil data pass dari DB
+                            String passwordFromDB = dataSnapshot.child("password").getValue().toString();
 
 
-                                }
-                                else {
-                                    Toast.makeText(getApplicationContext(), "Username/Password tidak ada!", Toast.LENGTH_SHORT).show();
+                            //validasi password dg DB
+                            if (password.equals(passwordFromDB)) {
 
-                                }
+                                //simpan usernamekey  ke local
+
+                                SharedPreferences sharedPreferences = getSharedPreferences(USERNAME_KEY, MODE_PRIVATE);
+                                SharedPreferences.Editor editor = sharedPreferences.edit();
+                                editor.putString(username_key, logusername.getText().toString());
+                                editor.apply();
+
+                                //pindah activity
+                                Intent gohome = new Intent(Login.this, Pilih_Motor.class);
+                                startActivity(gohome);
+
+                            } else {
+
+                                Toast.makeText(getApplicationContext(), "Password SALAH!", Toast.LENGTH_SHORT).show();
 
                             }
 
-                            @Override
-                            public void onCancelled(DatabaseError databaseError) {
-                                Toast.makeText(getApplicationContext(), "Database Error!", Toast.LENGTH_SHORT).show();
-                            }
-                        });
+
+
+                        } else {
+                            Toast.makeText(getApplicationContext(), "Username Tidak Ada", Toast.LENGTH_SHORT).show();
+
+                        }
                     }
-                }
-            }
-        });
-        tmbl_daftar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent b = new Intent(Login.this, Daftar.class);
-                startActivity(b);
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                    }
+                });
+
+
+
             }
         });
     }
